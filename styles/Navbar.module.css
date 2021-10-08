@@ -1,0 +1,22 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 0 10vw;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--separator);
+}
+
+.cta {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .cta {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+}
