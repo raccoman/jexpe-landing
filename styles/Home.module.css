@@ -6,7 +6,8 @@
 
 .hero {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   padding: 10vh 0;
@@ -52,15 +53,40 @@
 .separator {
   width: 100%;
   height: 63px;
-  background: url("/separator.svg") no-repeat;
+  background: url("/separator.svg") no-repeat bottom center;
   background-size: contain;
 }
 
 .showcase {
-  height: 50vh;
+  height: 100%;
 }
 
-.showcaseContent {
-  height: 100%;
-  background-color: var(--white);
+.softwareShowcase {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  margin-bottom: -20vh;
 }
+
+.contentArea {
+  height: 100%;
+}
+
+.container {
+  padding: 10vh 10vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.blackTextContent {
+  color: var(--black);
+  text-align: center;
+}
+
+.whiteTextContent {
+  color: var(--white);
+  text-align: center;
+}
+
