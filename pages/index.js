@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import styles from "../styles/Home.module.css";
-import Button from "../components/Button";
+import Button from "../components/Button.jsx";
 import Image from "next/image";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm.jsx";
+import Footer from "../components/Footer.jsx";
 import { Typewriter } from "react-simple-typewriter";
 import { createRef } from "react";
 
