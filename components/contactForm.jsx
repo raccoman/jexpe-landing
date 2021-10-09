@@ -18,7 +18,7 @@ function contactForm() {
     e.preventDefault();
     setState({ ...state, loading: true });
     try {
-      const rawResponse = await fetch("https://api.jexpe.com/beta/join", {
+      await fetch("https://api.jexpe.com/beta/join", {
         method: "POST",
         headers: {
           Accept: "application/json",
