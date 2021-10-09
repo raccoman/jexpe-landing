@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./Button.jsx";
+import Button from "./button";
 import styles from "../styles/Navbar.module.css";
 
 function Navbar(props) {

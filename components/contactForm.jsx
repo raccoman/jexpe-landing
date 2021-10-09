@@ -1,7 +1,7 @@
-import Input from "./Input.jsx";
-import Button from "./Button.jsx";
+import Input from "./input";
+import Button from "./button";
 import { useRef, useState } from "react";
-import Loading from "./Loading.jsx";
+import Loading from "./loading";
 import styles from "../styles/ContactForm.module.css";
 
 function ContactForm() {
