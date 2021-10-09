@@ -1,10 +1,10 @@
-import Input from "./input";
-import Button from "./button";
+import Input from "./Input";
+import Button from "./Button";
 import { useRef, useState } from "react";
-import Loading from "./loading";
+import Loading from "./Loading";
 import styles from "../styles/ContactForm.module.css";
 
-function contactForm() {
+function ContactForm() {
   const [state, setState] = useState({
     loading: false,
     retryScreen: false,
@@ -56,7 +56,7 @@ function contactForm() {
           Something went wrong!
         </h1>
         <h2 className={styles.subheading}>
-          Oh...it's really embarrassing. We were not able to process your
+          Oh...it&apos;s really embarrassing. We were not able to process your
           request. Please try again by pressing the button below, if the problem
           persists please try again later.
         </h2>
@@ -108,4 +108,4 @@ function contactForm() {
   }
 }
 
-export default contactForm;
+export default ContactForm;

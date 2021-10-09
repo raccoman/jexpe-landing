@@ -2,7 +2,7 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import Iubenda from "react-iubenda-policy";
 
-function footer() {
+function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -14,7 +14,7 @@ function footer() {
           }}
         >
           <div>
-            <Image src="/logo.png" width={132} height={30} />
+            <Image src="/logo.png" width={132} height={30} alt="Jexpe logo" />
             <p className={styles.text}>
               Copyright &copy; {new Date().getFullYear()} Jexpe | All Rights
               Reserved.
@@ -53,4 +53,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

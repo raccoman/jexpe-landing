@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
-import Button from "../components/button";
+import Button from "../components/Button";
 import Image from "next/image";
-import ContactForm from "../components/contactForm";
-import Footer from "../components/footer";
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import { Typewriter } from "react-simple-typewriter";
 import { createRef } from "react";
 
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <div className={styles.showcase}>
           <div className={styles.softwareShowcase}>
-            <Image src="/mac_jexpe.png" width={895} height={705} />
+            <Image src="/mac_jexpe.png" width={895} height={705} alt="Jexpe software" />
           </div>
           <div className={styles.separator}></div>
           <div
@@ -88,14 +88,14 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.imageContent}>
-                <Image src="/protocols.png" width={440} height={420} />
+                <Image src="/protocols.png" width={440} height={420} alt="Protocols supported by Jexpe" />
               </div>
             </div>
           </div>
           <div className={styles.contentArea}>
             <div className={styles.containerReverse}>
               <div className={styles.imageContent}>
-                <Image src="/teams.png" width={440} height={420} />
+                <Image src="/teams.png" width={440} height={420} alt="Work with your team by using Jexpe" />
               </div>
               <div className={styles.textContent}>
                 <h1 className={styles.heading}>
