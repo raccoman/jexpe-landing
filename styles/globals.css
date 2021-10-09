@@ -30,9 +30,9 @@ p {
   font-family: Futura, sans-serif;
   font-size: 24px;
   font-weight: 500;
+  color: var(--white);
 }
 
 * {
   box-sizing: border-box;
-  color: var(--white);
 }

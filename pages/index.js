@@ -113,17 +113,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.ctaSection} ref={ctaForm}>
-          <div>
-            <h1 className={styles.heading} style={{ textAlign: "center" }}>
-              Want To Be a Beta Tester?
-            </h1>
-            <h2 className={styles.subheading}>
-              We want to offer the best possible service and we need your help.
-              We value feedback and it will ultimately shape our product into
-              something you love using.
-            </h2>
-            <ContactForm />
-          </div>
+          <ContactForm />
         </div>
       </main>
       <Footer />
