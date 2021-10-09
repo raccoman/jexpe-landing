@@ -1,0 +1,24 @@
+.input {
+  width: 100%;
+  height: 65px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  color: var(--black);
+  font-size: 18px;
+  text-indent: 10px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--separator);
+  box-shadow: -4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.label {
+  color: var(--black);
+  font-size: 20px;
+}
+
+.inputGroup {
+  padding: 10px 0;
+}
