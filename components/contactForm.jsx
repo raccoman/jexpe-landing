@@ -14,6 +14,7 @@ function contactForm() {
   const name = useRef(null);
   const email = useRef(null);
 
+  // Handle request and errors
   const submitForm = async (e) => {
     e.preventDefault();
     setState({ ...state, loading: true });
