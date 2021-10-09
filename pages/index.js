@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.contentArea}>
-            <div className={styles.container} style={{gridTemplateColumns: "40% 60%"}}>
+            <div className={styles.containerReverse}>
               <div>
                 <Image src="/teams.png" width={440} height={420} />
               </div>

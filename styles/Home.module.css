@@ -80,6 +80,14 @@
   align-items: center;
 }
 
+.containerReverse {
+  padding: 10vh 10vh;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
 .blackTextContent {
   color: var(--black);
   text-align: center;
@@ -90,3 +98,8 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .container, .containerReverse {
+    grid-template-columns: 1fr;
+  }
+}
