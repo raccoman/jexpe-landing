@@ -10,7 +10,6 @@ function Footer() {
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
           }}
         >
           <div>

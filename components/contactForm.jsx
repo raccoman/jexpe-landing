@@ -42,8 +42,8 @@ function ContactForm() {
           Thank you!
         </h1>
         <h2 className={styles.subheading}>
-          Thank you for signing up for the Jexpe beta, you should receive a
-          confirmation email shortly.
+          Thank you for subscribing to our beta program. We will contact you
+          when we are ready!
         </h2>
       </div>
     );
@@ -88,7 +88,14 @@ function ContactForm() {
           you love using.
         </h2>
         <form onSubmit={submitForm}>
-          <Input type="text" label="Name" ref={name} required />
+          <Input
+            type="text"
+            label="Name"
+            ref={name}
+            minLength="3"
+            maxLength="32"
+            required
+          />
           <Input type="email" label="Email Address" ref={email} />
           <Button
             type="submit"
