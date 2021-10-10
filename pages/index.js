@@ -9,7 +9,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { createRef } from "react";
 
 export default function Home() {
-  const ctaForm = createRef(null);
+  const ctaForm = createRef();
 
   const scrollToCta = () =>
     ctaForm.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Jexpe &ndash; Your one-stop communication software</title>
         <meta name="description" content="Jexpe is an easy-to-use software that supports all of the most common communication methods to maximize productivity, and foster collaboration in teams." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={"/favicon.ico"} />
       </Head>
 
       <Navbar ctaOnClick={scrollToCta} />
@@ -39,9 +39,9 @@ export default function Home() {
                     "OneDrive",
                     "Google Drive",
                     "Dropbox",
-                    "SSH",
-                    "SFTP",
-                    "Telnet",
+                    "Over SSH",
+                    "Over SFTP",
+                    "Over Telnet",
                   ]}
                   loop={0}
                   cursor={false}
@@ -70,7 +70,7 @@ export default function Home() {
           <div className={styles.softwareShowcase}>
             <Image src="/mac_jexpe.png" width={895} height={705} alt="Jexpe software" />
           </div>
-          <div className={styles.separator}></div>
+          <div className={styles.separator}/>
           <div
             className={styles.contentArea}
             style={{ backgroundColor: "var(--white)" }}
