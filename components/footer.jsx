@@ -33,11 +33,8 @@ function Footer() {
         <div className={styles.links}>
           <ul>
             {[
-              { text: "Youtube", link: "https://youtube.com" },
-              { text: "Reddit", link: "" },
-              { text: "Discord", link: "" },
-              { text: "Twitter", link: "" },
-              { text: "LinkedIn", link: "" },
+              { text: "Youtube", link: "https://www.youtube.com/channel/UCIrwUQA6vv3327d5TShfCrw" },
+              { text: "LinkedIn", link: "https://www.linkedin.com/company/jexpe" },
             ].map((value, index) => {
               return (
                 <li key={index}>

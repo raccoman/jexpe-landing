@@ -12,6 +12,7 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-ga": "^3.3.0",
     "react-iubenda-policy": "^0.1.1",
     "react-simple-typewriter": "^3.0.1"
   },
