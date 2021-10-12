@@ -37,7 +37,7 @@ function Footer() {
             ].map((value, index) => {
               return (
                 <li key={index}>
-                  <a target="_blank" href={value.link}>{value.text}</a>
+                  <a target="_blank" rel="noreferrer" href={value.link}>{value.text}</a>
                 </li>
               );
             })}
