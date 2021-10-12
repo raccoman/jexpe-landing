@@ -22,7 +22,6 @@ function Footer() {
         </div>
         <div className={styles.links}>
           <ul>
-            <li>info@jexpe.com</li>
             <li>
               <Iubenda id={17665417} type="privacy" styling="nostyle">
                 Privacy Policy
