@@ -94,9 +94,15 @@ function ContactForm() {
             ref={name}
             minLength="3"
             maxLength="32"
+            id="contactForm-name"
             required
           />
-          <Input type="email" label="Email Address" ref={email} />
+          <Input
+            type="email"
+            label="Email Address"
+            ref={email}
+            id="contactForm-email"
+          />
           <Button
             type="submit"
             style={{

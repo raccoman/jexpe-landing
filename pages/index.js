@@ -17,10 +17,12 @@ export default function Home() {
     <>
       <Head>
         <title>Jexpe &ndash; Your one-stop communication software</title>
-        <meta name="description" content="Jexpe is an easy-to-use software that supports all of the most common communication methods to maximize productivity, and foster collaboration in teams." />
+        <meta
+          name="description"
+          content="Jexpe is an easy-to-use software that supports all of the most common communication methods to maximize productivity, and foster collaboration in teams."
+        />
         <link rel="icon" href={"/favicon.ico"} />
       </Head>
-
       <Navbar ctaOnClick={scrollToCta} />
 
       <main className={styles.main}>
@@ -68,9 +70,14 @@ export default function Home() {
         </div>
         <div className={styles.showcase}>
           <div className={styles.softwareShowcase}>
-            <Image src="/mac_jexpe.png" width={895} height={705} alt="Jexpe software" />
+            <Image
+              src="/mac_jexpe.png"
+              width={895}
+              height={705}
+              alt="Jexpe software"
+            />
           </div>
-          <div className={styles.separator}/>
+          <div className={styles.separator} />
           <div
             className={styles.contentArea}
             style={{ backgroundColor: "var(--white)" }}
@@ -88,14 +95,24 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.imageContent}>
-                <Image src="/protocols.png" width={440} height={420} alt="Protocols supported by Jexpe" />
+                <Image
+                  src="/protocols.png"
+                  width={440}
+                  height={420}
+                  alt="Protocols supported by Jexpe"
+                />
               </div>
             </div>
           </div>
           <div className={styles.contentArea}>
             <div className={styles.containerReverse}>
               <div className={styles.imageContent}>
-                <Image src="/teams.png" width={440} height={420} alt="Work with your team by using Jexpe" />
+                <Image
+                  src="/teams.png"
+                  width={440}
+                  height={420}
+                  alt="Work with your team by using Jexpe"
+                />
               </div>
               <div className={styles.textContent}>
                 <h1 className={styles.heading}>
