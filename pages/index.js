@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.ctaSection} ref={ctaForm}>
-          <ContactForm />
+          <ContactForm closed />
         </div>
       </main>
       <Footer />

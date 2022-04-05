@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Loading from "./loading";
 import styles from "../styles/ContactForm.module.css";
 
-function ContactForm() {
+function ContactForm({ closed }) {
   const [state, setState] = useState({
     loading: false,
     retryScreen: false,
@@ -35,6 +35,19 @@ function ContactForm() {
       setState({ ...state, retryScreen: true, loading: false });
     }
   };
+
+  if(closed) {
+    return (
+      <div>
+        <h1 className={styles.heading} style={{ textAlign: "center" }}>
+          Beta subscriptions closed
+        </h1>
+        <h2 className={styles.subheading}>
+          Our beta subscriptions are currently closed.
+        </h2>
+      </div>
+    );
+  }
   if (state.completed) {
     return (
       <div>
