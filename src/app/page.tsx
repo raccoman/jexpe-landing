@@ -8,9 +8,9 @@ import { GithubLogo, PaperPlaneTilt } from '@phosphor-icons/react'
 const HomePage: NextPage = () => {
 
     return (
-        <div className='h-screen w-screen p-6 sm:p-12 flex'>
+        <div className='sm:h-screen w-screen p-6 sm:p-12 flex'>
 
-            <div className='h-full w-full flex flex-col justify-between'>
+            <div className='h-full w-full flex flex-col gap-40 sm:justify-between'>
 
                 <div className='flex justify-between items-center'>
                     <p>Jexpe</p>
@@ -22,7 +22,7 @@ const HomePage: NextPage = () => {
 
                 <div className='flex flex-col gap-20'>
 
-                    <p className='text-4xl sm:text-7xl font-semibold'>
+                    <p className='text-4xl xs:text-6xl sm:text-7xl font-semibold'>
                         The alternative agency for<br />
                         alternative brands.
                     </p>
@@ -34,12 +34,12 @@ const HomePage: NextPage = () => {
                         <p className='mt-1 font-light text-gray-300 leading-snug'>
                             Need a stunning website? Get a quote now!
                         </p>
-                        <div className='mt-4 flex items-center'>
-                            <p className='bg-gray-800 px-2 sm:px-4 h-10 rounded-l text-sm flex items-center'>
+                        <div className='mt-4 flex items-center h-10'>
+                            <p className='h-full bg-gray-800 px-4 rounded-l text-sm flex items-center'>
                                 {CONTACT_EMAIL}
                             </p>
                             <Link href={`mailto:${CONTACT_EMAIL}`}
-                                  className='rounded-r flex items-center text-black/75 hover:bg-[#97edff] bg-[#b1ff9e] px-2 xs:px-4 h-full uppercase font-extrabold text-xs'>
+                                  className='h-full rounded-r flex items-center text-black/75 hover:bg-[#97edff] bg-[#b1ff9e] px-2 px-4 uppercase font-extrabold text-xs'>
                                 <span className='hidden xs:flex'>SEND EMAIL</span>
                                 <PaperPlaneTilt weight='duotone' size={16} className='flex xs:hidden' />
                             </Link>
