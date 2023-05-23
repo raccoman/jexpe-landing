@@ -8,9 +8,9 @@ import { GithubLogo, PaperPlaneTilt } from '@phosphor-icons/react'
 const HomePage: NextPage = () => {
 
     return (
-        <div className='h-screen w-screen p-6 xs:p-12 flex'>
+        <div className='h-screen w-screen p-6 sm:p-12 flex'>
 
-            <div className='h-full w-full flex flex-col gap-52 xs:justify-between'>
+            <div className='h-full w-full flex flex-col justify-between'>
 
                 <div className='flex justify-between items-center'>
                     <p>Jexpe</p>
@@ -22,7 +22,7 @@ const HomePage: NextPage = () => {
 
                 <div className='flex flex-col gap-20'>
 
-                    <p className='text-4xl xs:text-7xl font-semibold'>
+                    <p className='text-4xl sm:text-7xl font-semibold'>
                         The alternative agency for<br />
                         alternative brands.
                     </p>
@@ -35,7 +35,7 @@ const HomePage: NextPage = () => {
                             Need a stunning website? Get a quote now!
                         </p>
                         <div className='mt-4 flex items-center'>
-                            <p className='bg-gray-800 px-2 xs:px-4 h-10 rounded-l text-sm flex items-center'>
+                            <p className='bg-gray-800 px-2 sm:px-4 h-10 rounded-l text-sm flex items-center'>
                                 {CONTACT_EMAIL}
                             </p>
                             <Link href={`mailto:${CONTACT_EMAIL}`}
